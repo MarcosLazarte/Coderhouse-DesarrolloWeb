@@ -11,58 +11,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;400&family=Italiana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-
-    </style>
 </head>
 <body>
-<!-- ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- ----- -->
+    <!-- ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- ----- -->
+    <div class="prueba"><i class="far fa-star navegador__cambioColor" id="star"></i></div>
     <header class="cabezita">
         <nav class="navegador">
             <span class="navegador__nombre">Marcos Lazarte</span>
-            <i class="fas fa-chess-knight navegador__cambioColor"></i>
             <span class="navegador__estado">Available for work</span>
         </nav>
         <div class="navegadorAbajo">
             <div class="navegadorAbajo__time">© 2021</div>
             <div class="posicionSwitch">
                 <button class="navegadorAbajo__switch" id="switch">
+                    <span style="color: black;"><i class="fas fa-circle"></i></span>
                     <span><i class="fas fa-circle-notch"></i></span>
-                    <span><i class="fas fa-circle"></i></i></span>
                 </button>
             </div>
 
         </div>
     </header>
-
+    <!-- ----- ----- ----- ----- ----- MAIN ----- ----- ----- ----- ----- -->
     <main class="cuerpito">
-        <section class="cuerpito__titulazo" id="titulo">
-            <div class="cuerpito__titulazo--primero">BsAs-ba</div>
-            <div class="cuerpito__titulazo--segundo">sed web</div>
-            <div class="cuerpito__titulazo--tercero">designer+</div>
-            <div class="cuerpito__titulazo--cuarto">developer</div>
+            <section class="cuerpito__titulazo" id="titulo">
+                <div class="cuerpito__titulazo--primero">BsAs-ba</div>
+                <div class="cuerpito__titulazo--segundo">sed web</div>
+                <div class="cuerpito__titulazo--tercero">designer+</div>
+                <div class="cuerpito__titulazo--cuarto">developer</div>
+            </section>
 
+            <div class="relleno"></div>
+
+        <section class="cuerpito__parrafoUno" id="parrafo">
+            <div class="cuerpito__parrafoUno--oraUno animado">Hola que tal! Mi nombre es Marcos Lazarte</div>
+            <div class="animado">soy un desarrollador y diseñador web argentino.</div>
+            <div class="animado">A partir una idea general puedo brindar</div>
+            <div class="animado">un producto con un diseño llamativo y legible.</div>
         </section>
-        <section class="cuerpito__parrafo">
-            <div>Hola que tal! Mi nombre es Marcos Lazarte</div>
-            <div>soy un desarrollador y diseñador web argentino.</div>
-            <div>A partir una idea general puedo brindar</div>
-            <div>un producto con un diseño llamativo y legible.</div> <br>
-            Dado los acontecimientos relacionados al covid-19, encontre en el diseño web un mundo donde volcar mi energia.
-            A continuación, podras ver los trabajos en los que estuve ocupado en estos ultimos meses.
-            Más allá que no consideres en contar conmigo, espero que los disfrutes.
+        <section class="cuerpito__parrafoDos" id="parrafo">
+            <div class="animado">Dado los acontecimientos relacionados al covid-19,</div>
+            <div class="animado">encontre en el diseño web un mundo donde volcar mi</div>
+            <div class="animado">energia. A continuación, podras ver los trabajos en</div>
+            <div class="animado">los que estuve ocupado en estos ultimos meses,</div>
+            <div class="animado">espero que disfrutes.</div>    
         </section>
-        <a class="cuerpito__trabajos" href="https://marcoslazarte.github.io/HK-Coder/">
-            <h2>Hollow Knight</h2>
-            <img class="cuerpito__imagen" src="https://drive.google.com/uc?/export=view&id=1CjyuWjgees40QiExBYtyYkr1LHfcNlgT" alt="Hollow Knight">
-        </a>
-        <a class="cuerpito__trabajos" href="https://marcoslazarte.github.io/Venta-de-Depas/">
-            <h2>Comprate Deptos</h2>
-            <img class="cuerpito__imagen" src="https://drive.google.com/uc?/export=view&id=1k-HvqGd82p0QG1jQ9K70HP_o_2L-DXi2" alt="Casas">
-        </a>
-        
-        <div>Estemos en contacto</div>
-        <div>Estemos en contacto</div>
+        <section class="cuerpito__trabajos--acomodar">
+            <a class="cuerpito__trabajos" href="https://marcoslazarte.github.io/HK-Coder/" target="_blank">
+                <h2 class="cuerpito__trabajos--titulo animado">Hollow Knight</h2>
+                <img class="cuerpito__trabajos--imagen" src="https://drive.google.com/uc?/export=view&id=1CjyuWjgees40QiExBYtyYkr1LHfcNlgT" alt="Hollow Knight">
+            </a>
+            <a class="cuerpito__trabajos" href="https://marcoslazarte.github.io/Venta-de-Depas/" target="_blank">
+                <h2 class="cuerpito__trabajos--titulo animado">Deptos y casas</h2>
+                <img class="cuerpito__trabajos--imagen" src="https://drive.google.com/uc?/export=view&id=1k-HvqGd82p0QG1jQ9K70HP_o_2L-DXi2" alt="Casas">
+            </a>
+        </section>
+        <section class="charlemos">
+            <div class="charlemos__primero">Charlemos Charlemos Charlemos Charlemos Charlemos Charlemos Charlemos</div>
+            <div class="charlemos__segundo">Estemos en contacto Estemos en contacto Estemos en contacto Estemos en contacto Estemos en contacto Estemos en contacto</div>
+        </section>
 
         <ul class="cuerpito__lista">
             <li>linkedin</li>
@@ -71,6 +77,7 @@
             <li>instagram</li>
         </ul>
     </main>
+    <!-- ----- ----- ----- ----- ----- FOOTER ----- ----- ----- ----- ----- -->
 
     <footer class="piecito">
         <div></div>
