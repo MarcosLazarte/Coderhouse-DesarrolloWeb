@@ -10,8 +10,6 @@ $blanco: #FEFEFE;
   $calculation: calc(20vh + 1px);
 
 
-
-
 *{
     padding: 0;
 	margin: 0;
@@ -103,7 +101,7 @@ $blanco: #FEFEFE;
     .prueba{
         position: absolute;
         padding-top: 30px;
-        margin-left: 30vw;
+        margin-left: 40vw;
         font-size: 15px;
         cursor: pointer;
         z-index: 2;
@@ -185,7 +183,7 @@ $blanco: #FEFEFE;
         height: auto;
         text-transform: uppercase;
         font-size: 16vw;
-        line-height: 12.5vw;
+        line-height: 15.5vw;
         margin-left: 2vw;
         margin-right: 3vw;
         padding-top: 100px;
@@ -200,24 +198,24 @@ $blanco: #FEFEFE;
         }
 
         .cuerpito__titulazo--primero{
-            letter-spacing: 10px;
+            letter-spacing: 1vw;
             font-weight: 700;
             margin-left: 1vw;
         }
         .cuerpito__titulazo--segundo{
-            letter-spacing: 10px;
+            letter-spacing: 1vw;
             font-weight: 700;
             margin-left: 17vw;
             margin-right: 3vw;
         }
         .cuerpito__titulazo--tercero{
-            letter-spacing: 10px;
+            letter-spacing: 1vw;
             font-weight: 700;
             margin-left: 1vw;
             margin-right: 3vw;
         }
         .cuerpito__titulazo--cuarto{
-            letter-spacing: 10px;
+            letter-spacing: 1vw;
             font-weight: 700;
             margin-left: 1vw;
             margin-right: 3vw;
@@ -273,14 +271,7 @@ $blanco: #FEFEFE;
             background-position-Y: -600px;
             background-position-x: center;
         }
-        .cuerpito__trabajos--imagen1{
-            border-radius: 8px;
-            width: 92%;
-            margin-left: 4%;
-            justify-content: center;
-            justify-items: center;
-            height: auto;
-        }
+
 
         .cuerpito__trabajos--titulo2{
             font-family: 'Italiana', serif;
@@ -290,12 +281,7 @@ $blanco: #FEFEFE;
             margin-right: 3vw;
             color: black;
         }
-        .cuerpito__trabajos--imagen2{
-                border-radius: 8px;
-                width: 92%;
-                margin-left: 4vw;
-                height: auto;
-        }
+
         .cuerpito__trabajos--titulo2:hover{
                 background-image: url("https://drive.google.com/uc?/export=view&id=12gFuJZAcWk8tK4H9cX5IFtBa5bRxvFB2");
                 background-position-Y: -800px;
@@ -303,6 +289,25 @@ $blanco: #FEFEFE;
                 background-repeat: repeat;
                 overflow: hidden;
         }
+
+
+    }
+    .cuerpito__trabajos--imagen1{
+        position: relative;
+        border-radius: 8px;
+        width: 92%;
+        margin-left: 4vw;
+        height: auto;
+    }
+    .cuerpito__trabajos--imagen2{
+        position: relative;
+        border-radius: 8px;
+        width: 92%;
+        margin-left: 4vw;
+        height: auto;
+    }
+    .test{
+
     }
     .charlemos{
         font-family: 'Italiana', serif;
@@ -613,13 +618,7 @@ $blanco: #FEFEFE;
             background-position-Y: -600px;
             background-position-x: center;
         }
-        .cuerpito__trabajos--imagen{
-            display: none;
-            border-radius: 8px;
-            width: 50%;
-            justify-content: center;
-            height: auto;
-        }
+
 
         .cuerpito__trabajos--titulo2{
             font-family: 'Italiana', serif;
@@ -629,13 +628,7 @@ $blanco: #FEFEFE;
             margin-right: 3vw;
             color: black;
         }
-        .cuerpito__trabajos--imagen{
-                display: none;
-                border-radius: 8px;
-                width: 50%;
-                justify-content: center;
-                height: auto;
-        }
+
         .cuerpito__trabajos--titulo2:hover{
                 background-image: url("https://drive.google.com/uc?/export=view&id=12gFuJZAcWk8tK4H9cX5IFtBa5bRxvFB2");
                 background-position-Y: -800px;
@@ -643,6 +636,25 @@ $blanco: #FEFEFE;
                 background-repeat: repeat;
                 overflow: hidden;
         }
+        .cuerpito__trabajos--imagen1{
+
+            border-radius: 8px;
+            width: 50%;
+            justify-content: center;
+            height: auto;
+        }
+
+        .cuerpito__trabajos--imagen2{
+
+            border-radius: 8px;
+            width: 50%;
+            justify-content: center;
+            height: auto;
+        }
+
+    }
+    .test{
+        display: none;
     }
     .charlemos{
         font-family: 'Italiana', serif;
