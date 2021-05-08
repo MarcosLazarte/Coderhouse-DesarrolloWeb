@@ -15,6 +15,7 @@ $blanco: #FEFEFE;
 	margin: 0;
 	box-sizing: border-box;
 }
+// ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
 @media screen and (max-width:767px){
     body::-webkit-scrollbar{
         width: 10px;
@@ -224,7 +225,17 @@ $blanco: #FEFEFE;
     .relleno{
         height: 0vh;
     }
-
+    .carota{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .carota__imagen{
+        height: auto;
+        width: 70%;
+        border-radius: 8px;
+    }
     .cuerpito__parrafoUno{
         text-transform: uppercase;
         font-family: 'Spartan', serif;
@@ -319,7 +330,7 @@ $blanco: #FEFEFE;
         position: relative;
         margin-top: 50px;
 
-        background-color: yellowgreen;
+        background-color: wheat;
         margin-bottom: 21vh;
         .charlemos__primero{
             display: none;
@@ -345,7 +356,6 @@ $blanco: #FEFEFE;
         font-size: 3vw;
         line-height: 1.35em;
         font-weight: 200;
-        background-color: wheat;
 
         margin-top: calc(21vh - 10px);
         margin-bottom: min($calculation, 60px);
@@ -369,7 +379,9 @@ $blanco: #FEFEFE;
         grid-template-rows: auto;
     }
 }
-@media screen and (min-width:768px){
+
+    // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
+@media screen and (min-width:768px){ 
     body::-webkit-scrollbar{
         width: 10px;
         background: #F39136;
@@ -571,7 +583,10 @@ $blanco: #FEFEFE;
     .relleno{
         height: 106vh;
     }
-
+    .carota{
+        width: 60%;
+        display: none;
+    }
     .cuerpito__parrafoUno{
         text-transform: uppercase;
         font-family: 'Spartan', serif;
@@ -666,7 +681,7 @@ $blanco: #FEFEFE;
         position: relative;
         margin-top: 50px;
 
-        background-color: yellowgreen;
+        background-color: wheat;
         margin-bottom: 21vh;
         .charlemos__primero{
             margin-left: -150vw;
@@ -691,7 +706,6 @@ $blanco: #FEFEFE;
         font-size: 3vw;
         line-height: 1.35em;
         font-weight: 200;
-        background-color: wheat;
 
         margin-top: calc(21vh - 10px);
         margin-bottom: min($calculation, 60px);

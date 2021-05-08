@@ -241,6 +241,21 @@
   .relleno {
     height: 0vh;
   }
+  .carota {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .carota__imagen {
+    height: auto;
+    width: 70%;
+    border-radius: 8px;
+  }
   .cuerpito__parrafoUno {
     text-transform: uppercase;
     font-family: 'Spartan', serif;
@@ -322,7 +337,7 @@
     overflow: hidden;
     position: relative;
     margin-top: 50px;
-    background-color: yellowgreen;
+    background-color: wheat;
     margin-bottom: 21vh;
   }
   .charlemos .charlemos__primero {
@@ -347,7 +362,6 @@
     font-size: 3vw;
     line-height: 1.35em;
     font-weight: 200;
-    background-color: wheat;
     margin-top: calc(21vh - 10px);
     margin-bottom: max(calc(20vh + 1px), 60px);
   }
@@ -600,6 +614,10 @@
   .relleno {
     height: 106vh;
   }
+  .carota {
+    width: 60%;
+    display: none;
+  }
   .cuerpito__parrafoUno {
     text-transform: uppercase;
     font-family: 'Spartan', serif;
@@ -686,7 +704,7 @@
     overflow: hidden;
     position: relative;
     margin-top: 50px;
-    background-color: yellowgreen;
+    background-color: wheat;
     margin-bottom: 21vh;
   }
   .charlemos .charlemos__primero {
@@ -710,7 +728,6 @@
     font-size: 3vw;
     line-height: 1.35em;
     font-weight: 200;
-    background-color: wheat;
     margin-top: calc(21vh - 10px);
     margin-bottom: max(calc(20vh + 1px), 60px);
   }
