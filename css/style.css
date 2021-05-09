@@ -112,9 +112,6 @@
     font-size: 20px;
     cursor: pointer;
   }
-  .navegador .navegador__cambioColor.dark {
-    color: #E1DBD7;
-  }
   .navegador .navegador__estado {
     font-family: 'Spartan', sans-serif;
     text-align: right;
@@ -129,11 +126,14 @@
   }
   .prueba {
     position: absolute;
-    padding-top: 30px;
+    padding-top: 26px;
     margin-left: 40vw;
     font-size: 15px;
     cursor: pointer;
     z-index: 2;
+  }
+  .prueba.dark {
+    color: #E1DBD7;
   }
   .navegadorAbajo {
     display: -ms-grid;
@@ -153,6 +153,9 @@
     color: black;
     font-size: 14px;
     margin-left: 4vw;
+  }
+  .navegadorAbajo .navegadorAbajo__time.dark {
+    color: #E1DBD7;
   }
   .navegadorAbajo .posicionSwitch {
     text-align: right;
@@ -294,11 +297,11 @@
     margin-left: 4vw;
     margin-top: 70px;
   }
-  .cuerpito__parrafoUno .cuerpito__parrafoUno--oraUno {
-    margin-left: 5vw;
-  }
   .cuerpito__parrafoUno.dark {
     color: #E1DBD7;
+  }
+  .cuerpito__parrafoUno .cuerpito__parrafoUno--oraUno {
+    margin-left: 5vw;
   }
   .cuerpito__parrafoDos {
     text-transform: uppercase;
@@ -324,6 +327,9 @@
     color: black;
     z-index: -3;
   }
+  .cuerpito__trabajos .cuerpito__trabajos--titulo1.dark {
+    color: #E1DBD7;
+  }
   .cuerpito__trabajos .cuerpito__trabajos--titulo1:hover {
     background-image: url("https://drive.google.com/uc?/export=view&id=1CjyuWjgees40QiExBYtyYkr1LHfcNlgT");
     background-position-Y: -600px;
@@ -337,6 +343,9 @@
     margin-left: 4vw;
     margin-right: 3vw;
     color: black;
+  }
+  .cuerpito__trabajos .cuerpito__trabajos--titulo2.dark {
+    color: #E1DBD7;
   }
   .cuerpito__trabajos .cuerpito__trabajos--titulo2:hover {
     background-image: url("https://drive.google.com/uc?/export=view&id=12gFuJZAcWk8tK4H9cX5IFtBa5bRxvFB2");
@@ -370,7 +379,6 @@
     overflow: hidden;
     position: relative;
     margin-top: 50px;
-    background-color: wheat;
     margin-bottom: 21vh;
   }
   .charlemos .charlemos__primero {
@@ -380,10 +388,16 @@
     position: relative;
     white-space: nowrap;
   }
+  .charlemos .charlemos__primero.dark {
+    color: #E1DBD7;
+  }
   .charlemos .charlemos__segundo {
     margin-left: -100vw;
     position: relative;
     white-space: nowrap;
+  }
+  .charlemos .charlemos__segundo.dark {
+    color: #E1DBD7;
   }
   .espacio {
     height: 0vh;
@@ -444,10 +458,6 @@
     opacity: 0.1;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-  }
-  .animado2 {
-    -webkit-transition: all 0.5;
-    transition: all 0.5;
   }
   .mostrarArriba {
     -webkit-animation: mostrarArriba 1.5s;
