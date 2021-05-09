@@ -6,6 +6,10 @@ const mParrafo3 = document.querySelector("#parrafo3");
 const hNavNombre = document.querySelector("#nav__nombre");
 const hNavEstado = document.querySelector("#nav__estado");
 const hNavAnio = document.querySelector("#navAbajo__time");
+const mTrabajo1 = document.querySelector("#trabajos__t1");
+const mTrabajo2 = document.querySelector("#trabajos__t2");
+const mCharla1 = document.querySelector("#charlemos1");
+const mCharla2 = document.querySelector("#charlemos2");
 
 const hStar = document.querySelector("#star");
 const mAky = document.querySelector("#imagenAky"); //revisar
@@ -24,8 +28,11 @@ btnSwitch.addEventListener('click', () =>{
     hNavNombre.classList.toggle('dark');
     hNavEstado.classList.toggle('dark');
     hNavAnio.classList.toggle('dark');
-    hStar.classList.toogle('dark');
-
+    hStar.classList.toggle('dark');
+    mTrabajo1.classList.toggle('dark');
+    mTrabajo2.classList.toggle('dark');
+    mCharla1.classList.toggle('dark');
+    mCharla2.classList.toggle('dark');
 });
 hStar.addEventListener('click', () =>{
     document.body.classList.toggle('color1');
