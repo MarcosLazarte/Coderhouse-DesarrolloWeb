@@ -102,11 +102,18 @@
     font-size: 14px;
     font-weight: 500;
     margin-left: 4vw;
+    z-index: 2;
+  }
+  .navegador .navegador__nombre.dark {
+    color: #E1DBD7;
   }
   .navegador .navegador__cambioColor {
     text-align: center;
     font-size: 20px;
     cursor: pointer;
+  }
+  .navegador .navegador__cambioColor.dark {
+    color: #E1DBD7;
   }
   .navegador .navegador__estado {
     font-family: 'Spartan', sans-serif;
@@ -115,6 +122,10 @@
     font-size: 14px;
     font-weight: 500;
     margin-right: 4vw;
+    z-index: 2;
+  }
+  .navegador .navegador__estado.dark {
+    color: #E1DBD7;
   }
   .prueba {
     position: absolute;
@@ -208,6 +219,7 @@
     padding-top: 100px;
     font-family: 'Italiana', serif;
     position: relative;
+    z-index: -1;
   }
   .cuerpito__titulazo.dark {
     color: #E1DBD7;
@@ -256,14 +268,31 @@
     width: 70%;
     border-radius: 8px;
   }
+  .imagen {
+    background-color: #787878;
+    height: 92.8vw;
+    width: 70vw;
+    border-radius: 20px;
+    margin-top: 70px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://drive.google.com/uc?/export=view&id=1ccwT7PW5BC-x3L8RSlPy2whTkBe6Wew9");
+  }
+  .imagen.dark {
+    height: 112.85vw;
+    width: 70vw;
+    border-radius: 12px;
+    background-image: url("https://drive.google.com/uc?/export=view&id=1q86OsRkDKZLwKUCHoOewIAa3C0ysRS_z");
+  }
   .cuerpito__parrafoUno {
     text-transform: uppercase;
     font-family: 'Spartan', serif;
     text-align: justify;
     font-size: 2.5vw;
     line-height: 1.9em;
-    margin-top: 100px;
     margin-left: 4vw;
+    margin-top: 70px;
   }
   .cuerpito__parrafoUno .cuerpito__parrafoUno--oraUno {
     margin-left: 5vw;
@@ -277,7 +306,7 @@
     text-align: justify;
     font-size: 2.5vw;
     line-height: 1.9em;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 4vw;
   }
   .cuerpito__parrafoDos.dark {
@@ -293,11 +322,13 @@
     margin-left: 4vw;
     margin-right: 3vw;
     color: black;
+    z-index: -3;
   }
   .cuerpito__trabajos .cuerpito__trabajos--titulo1:hover {
     background-image: url("https://drive.google.com/uc?/export=view&id=1CjyuWjgees40QiExBYtyYkr1LHfcNlgT");
     background-position-Y: -600px;
     background-position-x: center;
+    z-index: -3;
   }
   .cuerpito__trabajos .cuerpito__trabajos--titulo2 {
     font-family: 'Italiana', serif;
@@ -320,6 +351,7 @@
     width: 92%;
     margin-left: 4vw;
     height: auto;
+    z-index: -1;
   }
   .cuerpito__trabajos--imagen2 {
     position: relative;
@@ -327,6 +359,7 @@
     width: 92%;
     margin-left: 4vw;
     height: auto;
+    z-index: -1;
   }
   .charlemos {
     font-family: 'Italiana', serif;
@@ -385,7 +418,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   body::-webkit-scrollbar {
     width: 10px;
     background: #F39136;

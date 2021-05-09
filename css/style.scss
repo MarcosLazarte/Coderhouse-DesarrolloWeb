@@ -1,6 +1,7 @@
 $negro: #111111;
 $blanco: #FEFEFE;
-
+$blanco2: #E1DBD7;
+$gris: #787878;
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
   }
@@ -86,11 +87,20 @@ $blanco: #FEFEFE;
             font-size: 14px;
             font-weight: 500;
             margin-left: 4vw;
+
+            z-index: 2;
+            &.dark{
+                color: $blanco2;
+            }
         }
         .navegador__cambioColor{
             text-align: center;
             font-size: 20px;
             cursor: pointer;
+
+            &.dark{
+                color: $blanco2;
+            }
         }
         .navegador__estado{
             font-family: 'Spartan', sans-serif;
@@ -99,6 +109,11 @@ $blanco: #FEFEFE;
             font-size: 14px;
             font-weight: 500;
             margin-right: 4vw;
+
+            z-index: 2;
+            &.dark{
+                color: $blanco2;
+            }
         }
     }
     .prueba{
@@ -193,11 +208,13 @@ $blanco: #FEFEFE;
         font-family: 'Italiana', serif;
         position: relative;
 
+        z-index: -1;
+
         &.dark{
-            color: #E1DBD7;
+            color: $blanco2;
         }
         &.color1{
-            color: #E1DBD7;
+            color: $blanco2;
         }
 
         .cuerpito__titulazo--primero{
@@ -238,20 +255,38 @@ $blanco: #FEFEFE;
         width: 70%;
         border-radius: 8px;
     }
+    .imagen{
+        background-color: $gris;
+        height: 92.8vw;
+        width: 70vw;
+        border-radius: 20px;
+        margin-top: 70px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("https://drive.google.com/uc?/export=view&id=1ccwT7PW5BC-x3L8RSlPy2whTkBe6Wew9");
+
+        &.dark{
+            height: 112.85vw;
+            width: 70vw;
+            border-radius: 12px;
+            background-image: url("https://drive.google.com/uc?/export=view&id=1q86OsRkDKZLwKUCHoOewIAa3C0ysRS_z");
+        }
+    }
     .cuerpito__parrafoUno{
         text-transform: uppercase;
         font-family: 'Spartan', serif;
         text-align: justify;
         font-size: 2.5vw;
         line-height: 1.9em;
-        margin-top: 100px;
         margin-left: 4vw;
+        margin-top: 70px;
 
         .cuerpito__parrafoUno--oraUno{
             margin-left: 5vw;
         }
         &.dark{
-            color: #E1DBD7;
+            color: $blanco2;
         }
     }
     .cuerpito__parrafoDos{
@@ -260,12 +295,11 @@ $blanco: #FEFEFE;
         text-align: justify;
         font-size: 2.5vw;
         line-height: 1.9em;
-        margin-top: 100px;
+        margin-top: 70px;
         margin-left: 4vw;
 
         &.dark{
-            color: #E1DBD7;
-
+            color: $blanco2
         }
     }
     .cuerpito__trabajos{
@@ -278,11 +312,15 @@ $blanco: #FEFEFE;
             margin-left: 4vw;
             margin-right: 3vw;
             color: black;
+
+            z-index: -3;
         }
         .cuerpito__trabajos--titulo1:hover{
             background-image: url("https://drive.google.com/uc?/export=view&id=1CjyuWjgees40QiExBYtyYkr1LHfcNlgT");
             background-position-Y: -600px;
             background-position-x: center;
+
+            z-index: -3;
         }
 
 
@@ -311,6 +349,8 @@ $blanco: #FEFEFE;
         width: 92%;
         margin-left: 4vw;
         height: auto;
+
+        z-index: -1;
     }
     .cuerpito__trabajos--imagen2{
         position: relative;
@@ -318,6 +358,8 @@ $blanco: #FEFEFE;
         width: 92%;
         margin-left: 4vw;
         height: auto;
+
+        z-index: -1;
     }
     .test{
 
@@ -385,7 +427,7 @@ $blanco: #FEFEFE;
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- -----
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
-@media screen and (min-width:768px){ 
+@media screen and (min-width:767px){ 
     body::-webkit-scrollbar{
         width: 10px;
         background: #F39136;
