@@ -18,11 +18,11 @@
     <div class="prueba"><i class="far fa-star navegador__cambioColor" id="star"></i></div>
     <header class="cabezita">
         <nav class="navegador">
-            <span class="navegador__nombre">Marcos Lazarte</span>
-            <span class="navegador__estado">Available for work</span>
+            <span class="navegador__nombre" id="nav__nombre">Marcos Lazarte</span>
+            <span class="navegador__estado" id="nav__estado">Available for work</span>
         </nav>
         <div class="navegadorAbajo">
-            <div class="navegadorAbajo__time">© 2021</div>
+            <div class="navegadorAbajo__time" id="navAbajo__time">© 2021</div>
             <div class="posicionSwitch">
                 <button class="navegadorAbajo__switch" id="switch">
                     <span style="color: black;"><i class="fas fa-circle"></i></span>
@@ -42,7 +42,8 @@
             </section>
 
             <div class="relleno"></div>
-            <div class="carota"><img class="carota__imagen" src="https://drive.google.com/uc?/export=view&id=1ccwT7PW5BC-x3L8RSlPy2whTkBe6Wew9" alt="aky"></div>
+            <section style="display: flex; justify-items: center; justify-content: center; height: auto;"><div class="imagen" id="imagenAky"></div></section>
+            <!-- <div class="carota"><img class="carota__imagen" src="https://drive.google.com/uc?/export=view&id=1ccwT7PW5BC-x3L8RSlPy2whTkBe6Wew9" alt="aky"></div> -->
 
         <section class="cuerpito__parrafoUno" id="parrafo">
             <div class="cuerpito__parrafoUno--oraUno animado">Hola que tal! Mi nombre es Marcos Lazarte</div>
@@ -50,7 +51,7 @@
             <div class="animado">A partir una idea general puedo brindar</div>
             <div class="animado">un producto con un diseño llamativo y legible.</div>
         </section>
-        <section class="cuerpito__parrafoDos" id="parrafo">
+        <section class="cuerpito__parrafoDos" id="parrafo2">
             <div class="animado">Dado los acontecimientos relacionados al covid-19,</div>
             <div class="animado">encontre en el diseño web un mundo donde volcar mi</div>
             <div class="animado">energia. A continuación, podras ver los trabajos en</div>
@@ -70,22 +71,23 @@
             <div class="test"><img class="cuerpito__trabajos--imagen2" src="https://drive.google.com/uc?/export=view&id=1k-HvqGd82p0QG1jQ9K70HP_o_2L-DXi2" alt="Casas"></div>  
         </section>
 
-        <section class="cuerpito__parrafoUno" id="parrafo">
+        <section class="cuerpito__parrafoUno" id="parrafo3">
             <div class="cuerpito__parrafoUno -- oraUno animado">Gracias a mi espiritu autodidacta y la educación</div>
             <div class="animado">brindada por Coderhouse, fui adquiriendo un expertise</div>
             <div class="animado">de diversas habilidades que me permiten producir </div>
             <div class="animado">proyectos cada vez más complejos y esteticos.</div>
         </section>
+
         <section class="charlemos">
             <div class="charlemos__primero">Charlemos Charlemos Charlemos Charlemos Charlemos Charlemos Charlemos</div>
             <div class="charlemos__segundo">Estemos en contacto Estemos en contacto Estemos en contacto Estemos en contacto Estemos en contacto Estemos en contacto</div>
         </section>
+
         <div class="espacio"></div>
         <section class="contactame">
             <h3>mlazarte.webd@gmail.com</h3>
             <ul class="contactame__lista">
                 <li>linkedin</li>
-                <li>unsplansh</li>
             </ul>
         </section>
     </main>
@@ -93,24 +95,34 @@
 
     <footer class="piecito">
         <div></div>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-          </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Legals</button>
           
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Gracias por su visita</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  Marcos Lazarte <br>
+                  Desarrollador web <br>
+                  <br>
+                  mlazarte.webd@gmail.com <br>
+                  <br>
+                  Ojalá que estés teniendo un excelente día. Esta página fue hecha con fines educativos esperando poder demostrar la variedad de herramientas que he adquirido. <br>
+                  Espero que la hayas disfrutado.<br>
+                  Nos vemos. <br>
+                  <br>
+                  Aky <br>
+                  <br> <br>
+                  Esta página web no posee cookies, por lo tanto, se protege su privacidad al no contabilizar a sus visitantes ni colocando ningún dato oculto en su navegador web.
                 </div>
               </div>
             </div>
-          </div>        <div></div>
+          </div>
+          
     </footer>
 
 
