@@ -11,8 +11,10 @@ const mTrabajo2 = document.querySelector("#trabajos__t2");
 const mCharla1 = document.querySelector("#charlemos1");
 const mCharla2 = document.querySelector("#charlemos2");
 
+var i="A";
+
 const hStar = document.querySelector("#star");
-const mAky = document.querySelector("#imagenAky"); //revisar
+const mAky = document.querySelector("#imagenAky");
 let animado = document.querySelectorAll(".animado");
 var alto = (window.innerHeight);
 
@@ -24,7 +26,7 @@ btnSwitch.addEventListener('click', () =>{
     mParrafo2.classList.toggle('dark');
     mParrafo3.classList.toggle('dark');
 
-    mAky.classList.toggle('dark'); //revisar
+    mAky.classList.toggle('dark');
     hNavNombre.classList.toggle('dark');
     hNavEstado.classList.toggle('dark');
     hNavAnio.classList.toggle('dark');
@@ -34,11 +36,107 @@ btnSwitch.addEventListener('click', () =>{
     mCharla1.classList.toggle('dark');
     mCharla2.classList.toggle('dark');
 });
+//añadido nueva
 hStar.addEventListener('click', () =>{
-    document.body.classList.toggle('color1');
-    mTitulo.classList.toggle('color1');
-    mParrafo.classList.toggle('color1');
-    hStar.classList.toogle('color1');
+    switch(i){
+        case"A":
+        hNavNombre.classList.toggle('color1');
+        hNavEstado.classList.toggle('color1');
+        hNavAnio.classList.toggle('color1');
+        hStar.classList.toggle('color1');
+        mTitulo.classList.toggle('color1');
+        mParrafo.classList.toggle('color1');
+        mParrafo2.classList.toggle('color1');
+        mParrafo3.classList.toggle('color1');
+        mTrabajo1.classList.toggle('color1');
+        mTrabajo2.classList.toggle('color1');
+        mCharla1.classList.toggle('color1');
+        mCharla2.classList.toggle('color1');
+
+        console.log("I tiene "+i+" y es rosa");
+        i="B";
+        console.log("Se le asigno "+i+"");
+        break;
+
+        case"B":
+        hNavNombre.classList.toggle('color1'); //Duplicamos para quitar el estilo anterior
+        hNavEstado.classList.toggle('color1');
+        hNavAnio.classList.toggle('color1');
+        hStar.classList.toggle('color1');
+        mTitulo.classList.toggle('color1');
+        mParrafo.classList.toggle('color1');
+        mParrafo2.classList.toggle('color1');
+        mParrafo3.classList.toggle('color1');
+        mTrabajo1.classList.toggle('color1');
+        mTrabajo2.classList.toggle('color1');
+        mCharla1.classList.toggle('color1');
+        mCharla2.classList.toggle('color1');
+
+        hNavNombre.classList.toggle('color2');
+        hNavEstado.classList.toggle('color2');
+        hNavAnio.classList.toggle('color2');
+        hStar.classList.toggle('color2');
+        mTitulo.classList.toggle('color2');
+        mParrafo.classList.toggle('color2');
+        mParrafo2.classList.toggle('color2');
+        mParrafo3.classList.toggle('color2');
+        mTrabajo1.classList.toggle('color2');
+        mTrabajo2.classList.toggle('color2');
+        mCharla1.classList.toggle('color2');
+        mCharla2.classList.toggle('color2');
+
+        console.log("I tiene "+i+" y es naranja");
+        i="C";
+        console.log("Se le asigno "+i+"");
+        break;
+
+        case"C":
+        hNavNombre.classList.toggle('color2'); //Duplicamos para quitar el estilo anterior
+        hNavEstado.classList.toggle('color2');
+        hNavAnio.classList.toggle('color2');
+        hStar.classList.toggle('color2');
+        mTitulo.classList.toggle('color2');
+        mParrafo.classList.toggle('color2');
+        mParrafo2.classList.toggle('color2');
+        mParrafo3.classList.toggle('color2');
+        mTrabajo1.classList.toggle('color2');
+        mTrabajo2.classList.toggle('color2');
+        mCharla1.classList.toggle('color2');
+        mCharla2.classList.toggle('color2');
+
+        hNavNombre.classList.toggle('color3');
+        hNavEstado.classList.toggle('color3');
+        hNavAnio.classList.toggle('color3');
+        hStar.classList.toggle('color3');
+        mTitulo.classList.toggle('color3');
+        mParrafo.classList.toggle('color3');
+        mParrafo2.classList.toggle('color3');
+        mParrafo3.classList.toggle('color3');
+        mTrabajo1.classList.toggle('color3');
+        mTrabajo2.classList.toggle('color3');
+        mCharla1.classList.toggle('color3');
+        mCharla2.classList.toggle('color3');
+
+        console.log("I tiene "+i+" y es azul");
+        i="D";
+        console.log("Se le asigno "+i+"");
+        break;
+
+        case"D":
+        hNavNombre.classList.toggle('color3');
+        hNavEstado.classList.toggle('color3');
+        hNavAnio.classList.toggle('color3');
+        hStar.classList.toggle('color3');
+        mTitulo.classList.toggle('color3');
+        mParrafo.classList.toggle('color3');
+        mParrafo2.classList.toggle('color3');
+        mParrafo3.classList.toggle('color3');
+        mTrabajo1.classList.toggle('color3');
+        mTrabajo2.classList.toggle('color3');
+        mCharla1.classList.toggle('color3');
+        mCharla2.classList.toggle('color3');
+        i="A";
+    }
 });
 function mostrarScroll() {
     let scrollTop = document.documentElement.scrollTop;
