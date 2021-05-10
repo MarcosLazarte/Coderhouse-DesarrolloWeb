@@ -1,4 +1,6 @@
 const btnSwitch = document.querySelector("#switch");
+const hCabezal__name = document.querySelector("#cabezal__name");
+const hCabezal__status = document.querySelector("#cabezal__status");
 const mTitulo = document.querySelector("#titulo");
 const mParrafo = document.querySelector("#parrafo");
 const mParrafo2 = document.querySelector("#parrafo2");
@@ -10,9 +12,12 @@ const mTrabajo1 = document.querySelector("#trabajos__t1");
 const mTrabajo2 = document.querySelector("#trabajos__t2");
 const mCharla1 = document.querySelector("#charlemos1");
 const mCharla2 = document.querySelector("#charlemos2");
+const mContactame = document.querySelector("#contactame");
+const mContactactame__lItemA = document.querySelector("#contactame__lItemA");
+const fAnio = document.querySelector("#footer__anio");
+const fLegal = document.querySelector("#footer__legal");
 
 var i="A";
-
 const hStar = document.querySelector("#star");
 const mAky = document.querySelector("#imagenAky");
 let animado = document.querySelectorAll(".animado");
@@ -25,8 +30,9 @@ btnSwitch.addEventListener('click', () =>{
     mParrafo.classList.toggle('dark');
     mParrafo2.classList.toggle('dark');
     mParrafo3.classList.toggle('dark');
-
     mAky.classList.toggle('dark');
+    hCabezal__name.classList.toggle('dark');
+    hCabezal__status.classList.toggle('dark');
     hNavNombre.classList.toggle('dark');
     hNavEstado.classList.toggle('dark');
     hNavAnio.classList.toggle('dark');
@@ -35,11 +41,19 @@ btnSwitch.addEventListener('click', () =>{
     mTrabajo2.classList.toggle('dark');
     mCharla1.classList.toggle('dark');
     mCharla2.classList.toggle('dark');
+    mContactame.classList.toggle('dark');
+    mContactactame__lItemA.classList.toggle('dark');
+    fAnio.classList.toggle('dark');
+    fLegal.classList.toggle('dark');
+
+
 });
 //añadido nueva
 hStar.addEventListener('click', () =>{
     switch(i){
         case"A":
+        hCabezal__name.classList.toggle('color1');
+        hCabezal__status.classList.toggle('color1');
         hNavNombre.classList.toggle('color1');
         hNavEstado.classList.toggle('color1');
         hNavAnio.classList.toggle('color1');
@@ -52,6 +66,8 @@ hStar.addEventListener('click', () =>{
         mTrabajo2.classList.toggle('color1');
         mCharla1.classList.toggle('color1');
         mCharla2.classList.toggle('color1');
+        mContactame.classList.toggle('color1');
+        mContactactame__lItemA.classList.toggle('color1');
 
         console.log("I tiene "+i+" y es rosa");
         i="B";
@@ -59,6 +75,8 @@ hStar.addEventListener('click', () =>{
         break;
 
         case"B":
+        hCabezal__name.classList.toggle('color1');
+        hCabezal__status.classList.toggle('color1');
         hNavNombre.classList.toggle('color1'); //Duplicamos para quitar el estilo anterior
         hNavEstado.classList.toggle('color1');
         hNavAnio.classList.toggle('color1');
@@ -71,7 +89,11 @@ hStar.addEventListener('click', () =>{
         mTrabajo2.classList.toggle('color1');
         mCharla1.classList.toggle('color1');
         mCharla2.classList.toggle('color1');
+        mContactame.classList.toggle('color1');
+        mContactactame__lItemA.classList.toggle('color1');
 
+        hCabezal__name.classList.toggle('color2');
+        hCabezal__status.classList.toggle('color2');
         hNavNombre.classList.toggle('color2');
         hNavEstado.classList.toggle('color2');
         hNavAnio.classList.toggle('color2');
@@ -84,6 +106,8 @@ hStar.addEventListener('click', () =>{
         mTrabajo2.classList.toggle('color2');
         mCharla1.classList.toggle('color2');
         mCharla2.classList.toggle('color2');
+        mContactame.classList.toggle('color2');
+        mContactactame__lItemA.classList.toggle('color2');
 
         console.log("I tiene "+i+" y es naranja");
         i="C";
@@ -91,6 +115,8 @@ hStar.addEventListener('click', () =>{
         break;
 
         case"C":
+        hCabezal__name.classList.toggle('color2');
+        hCabezal__status.classList.toggle('color2');
         hNavNombre.classList.toggle('color2'); //Duplicamos para quitar el estilo anterior
         hNavEstado.classList.toggle('color2');
         hNavAnio.classList.toggle('color2');
@@ -103,7 +129,11 @@ hStar.addEventListener('click', () =>{
         mTrabajo2.classList.toggle('color2');
         mCharla1.classList.toggle('color2');
         mCharla2.classList.toggle('color2');
+        mContactame.classList.toggle('color2');
+        mContactactame__lItemA.classList.toggle('color2');
 
+        hCabezal__name.classList.toggle('color3');
+        hCabezal__status.classList.toggle('color3');
         hNavNombre.classList.toggle('color3');
         hNavEstado.classList.toggle('color3');
         hNavAnio.classList.toggle('color3');
@@ -116,6 +146,8 @@ hStar.addEventListener('click', () =>{
         mTrabajo2.classList.toggle('color3');
         mCharla1.classList.toggle('color3');
         mCharla2.classList.toggle('color3');
+        mContactame.classList.toggle('color3');
+        mContactactame__lItemA.classList.toggle('color3');
 
         console.log("I tiene "+i+" y es azul");
         i="D";
@@ -123,6 +155,8 @@ hStar.addEventListener('click', () =>{
         break;
 
         case"D":
+        hCabezal__name.classList.toggle('color3');
+        hCabezal__status.classList.toggle('color3');
         hNavNombre.classList.toggle('color3');
         hNavEstado.classList.toggle('color3');
         hNavAnio.classList.toggle('color3');
@@ -135,6 +169,9 @@ hStar.addEventListener('click', () =>{
         mTrabajo2.classList.toggle('color3');
         mCharla1.classList.toggle('color3');
         mCharla2.classList.toggle('color3');
+        mContactame.classList.toggle('color3');
+        mContactactame__lItemA.classList.toggle('color3');
+
         i="A";
     }
 });
