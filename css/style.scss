@@ -8,6 +8,7 @@ $fondoVerde1:#2D625F;
 $fondoAzul1:#0E4150;
 $fondoNaranja1:#F39136;
 $fondoRosa1:#F7CBC9;
+$fondoRojo1: #75000D;
 $calculation: calc(20vh + 1px);
 
 @function max($numbers...) {
@@ -28,6 +29,9 @@ $calculation: calc(20vh + 1px);
     padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+ul{
+    padding-left: 0;
 }
 .spinner{
     animation: spin 10s linear infinite;
@@ -108,7 +112,18 @@ $calculation: calc(20vh + 1px);
             text-align: center;
             font-size: 20px;
             cursor: pointer;
-
+            &.dark{
+                color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoNaranja1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
         .navegador__estado{
             display: none;
@@ -130,15 +145,27 @@ $calculation: calc(20vh + 1px);
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
 
-        .a{
+        .cabezal__nombre{
             font-family: 'Spartan', sans-serif;
             text-transform: uppercase;
             font-size: 10px;
             font-weight: 500;
             margin-left: 4vw;
             margin-top: 30px;
+            &.dark{
+                color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoNaranja1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
-        .b{
+        .cabezal__estado{
             font-family: 'Spartan', sans-serif;
             text-align: right;
             text-transform: uppercase;
@@ -146,11 +173,23 @@ $calculation: calc(20vh + 1px);
             font-weight: 500;
             margin-right: 4vw;
             margin-top: 30px;
+            &.dark{
+                color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoNaranja1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
     }
-    .prueba{
+    .cabezal__estrella{
         position: absolute;
-        margin-top: 30px;
+        margin-top: 28px;
         font-size: 11px;
         cursor: pointer;
         z-index: 2;
@@ -511,20 +550,41 @@ $calculation: calc(20vh + 1px);
 
         margin-top: calc(21vh - 10px);
         margin-bottom: min($calculation, 60px);
-
+        &.dark{
+            color: $blanco2;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoNaranja1;
+        }
+        &.color3{
+            color: $fondoAzul1;
+        }
         .contactame__mail{
             font-size: 5vw;
         }
         .contactame__lista{
             margin-top: 70px;
-            margin-left: 23.5vw;
-            text-align: justify;
+            text-align: center;
             list-style: none;
             font-size: 4vw;
-
-            .contactame__lista1{
+            .contactame__listaItemA{
                 text-decoration: none;
                 color: $negro;
+                &.dark{
+                    color: $blanco2;
+                }
+                &.color1{
+                    color: $fondoRosa1;
+                }
+                &.color2{
+                    color: $fondoNaranja1;
+                }
+                &.color3{
+                    color: $fondoAzul1;
+                }
             }
             
         }
@@ -532,23 +592,39 @@ $calculation: calc(20vh + 1px);
     // ----- ----- ----- ----- ----- FOOTER ----- ----- ----- ----- ----- 
     .piecito{
         vertical-align: text-bottom;
-        margin-bottom: 40px;
+        margin-bottom: 37px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
+
+        align-items: center;
+        .piecito__anio{
+            margin-left: 4vw;
+            &.dark{
+                color: $blanco2;
+            }
+        }
+        .piecito__legals{
+            display: flex;
+            justify-content: space-around;
+        }
     }
     .modito{
-        background-color: transparent;
         border-style: none;
         color: $negro;
         z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: s;
+        text-align: center;
+        &.dark{
+            color: $blanco2;
+        }
     }
     .modito:hover{
-        background-color: transparent;
         border-style: none;
     }
     .modito::after{
-        background-color: transparent;
     }
 }
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
@@ -569,9 +645,8 @@ $calculation: calc(20vh + 1px);
     }
     body{
         background-color: antiquewhite;
-
         &.dark{
-            background: $negro;
+            background: #111111;
         }
     }
     .animado{
@@ -649,15 +724,27 @@ $calculation: calc(20vh + 1px);
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
 
-        .a{
+        .cabezal__nombre{
             font-family: 'Spartan', sans-serif;
             text-transform: uppercase;
             font-size: 14px;
             font-weight: 500;
             margin-left: 4vw;
             margin-top: 30px;
+            &.dark{
+                color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoNaranja1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
-        .b{
+        .cabezal__estado{
             font-family: 'Spartan', sans-serif;
             text-align: right;
             text-transform: uppercase;
@@ -665,9 +752,21 @@ $calculation: calc(20vh + 1px);
             font-weight: 500;
             margin-right: 4vw;
             margin-top: 30px;
+            &.dark{
+                color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoNaranja1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
     }
-    .prueba{
+    .cabezal__estrella{
         position: absolute;
         margin-top: 30px;
         font-size: 15px;
@@ -676,6 +775,15 @@ $calculation: calc(20vh + 1px);
 
         &.dark{
             color: $blanco2;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoNaranja1;
+        }
+        &.color3{
+            color: $fondoAzul1;
         }
     }
     .navegadorAbajo{
@@ -695,9 +803,6 @@ $calculation: calc(20vh + 1px);
             color: black;
             font-size: 14px;
             margin-left: 4vw;
-            &.dark{
-                color: $blanco2;
-            }
         }
         .posicionSwitch{
             text-align: right;
@@ -1027,40 +1132,77 @@ $calculation: calc(20vh + 1px);
         font-family: 'Spartan', sans-serif;
         line-height: 1.35em;
         font-weight: 200;
-
         margin-top: calc(21vh - 10px);
         margin-bottom: min($calculation, 60px);
-
+        &.dark{
+            color: $blanco2;
+        }
+        &.dark{
+            color: $blanco2;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoNaranja1;
+        }
+        &.color3{
+            color: $fondoAzul1;
+        }
         .contactame__mail{
             font-size: 5vw;
         }
         .contactame__lista{
             margin-top: 70px;
-            margin-left: 23.5vw;
-            text-align: justify;
+            text-align: center;
             list-style: none;
             font-size: 4vw;
-
-            .contactame__lista1{
+            .contactame__listaItemA{
                 text-decoration: none;
                 color: $negro;
+                &.dark{
+                    color: $blanco2;
+                }
+                &.color1{
+                    color: $fondoRosa1;
+                }
+                &.color2{
+                    color: $fondoNaranja1;
+                }
+                &.color3{
+                    color: $fondoAzul1;
+                }
             }
-            
         }
     }
     // ----- ----- ----- ----- ----- FOOTER ----- ----- ----- ----- ----- 
     .piecito{
         vertical-align: text-bottom;
-        margin-bottom: 40px;
+        margin-bottom: 37px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
+        align-items: center;
+
+        .piecito__anio{
+            margin-left: 4vw;
+            &.dark{
+                color: $blanco2;
+            }
+        }
+        .piecito__legals{
+            display: flex;
+            justify-content: space-around;
+        }
     }
     .modito{
         background-color: transparent;
         border-style: none;
         color: $negro;
         z-index: 2;
+        &.dark{
+            color: $blanco2;
+        }
     }
     .modito:hover{
         background-color: transparent;
@@ -1088,7 +1230,6 @@ $calculation: calc(20vh + 1px);
     }
     body{
         background-color: $fondoNaranja1;
-
         &.dark{
             background: #111111;
         }
@@ -1135,6 +1276,18 @@ $calculation: calc(20vh + 1px);
             font-size: 14px;
             font-weight: 500;
             margin-left: 3vw;
+            &.dark{
+                color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoRojo1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
         .navegador__cambioColor{
             text-align: center;
@@ -1148,25 +1301,49 @@ $calculation: calc(20vh + 1px);
             font-size: 14px;
             font-weight: 500;
             margin-right: 3vw;
+            &.dark{
+                color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoRojo1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
     }
-    .prueba{
+    .cabezal__estrella{
         position: absolute;
         padding-top: 30px;
         margin-left: 30vw;
         font-size: 15px;
         cursor: pointer;
         z-index: 2;
+        &.dark{
+            color: $blanco2;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoRojo1;
+        }
+        &.color3{
+            color: $fondoAzul1;
+        }
     }
     .cabezal{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
 
-        .a{
+        .cabezal__nombre{
             display: none;
         }
-        .b{
+        .cabezal__estado{
             display: none;
         }
     }
@@ -1185,12 +1362,15 @@ $calculation: calc(20vh + 1px);
             color: black;
             font-size: 14px;
             margin-left: 3vw;
+            &.dark{
+                color: $blanco2;
+            }
         }
         .posicionSwitch{
             text-align: right;
             position: absolute;
             right: 3vw;
-            bottom: 0px;
+            bottom: -2.5px;
         }
         .navegadorAbajo__switch{
 
@@ -1202,15 +1382,15 @@ $calculation: calc(20vh + 1px);
             display: flex;
             outline: none;
             &::after{
-                content: "";
+                content: "\f185";
+                font-family: "Font Awesome 5 Free";
+                text-align: center;
+                font-size: 21px;
                 display: block;
                 width: 30px;
                 height: 30px;
                 position: absolute;
                 background: #F1F1F1;
-                top: 0;
-                left: 0;
-                right: unset;
                 border-radius: 100px;
                 transition: .3s ease all;
                 box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
@@ -1220,8 +1400,9 @@ $calculation: calc(20vh + 1px);
                 background: #E1DBD7;
                 color: $negro;
                 &::after{
-                    right: 0;
-                    left: unset;
+                    content: '\f186';
+                    font-family: "Font Awesome 5 Free";
+
                 }
             }
             span{
@@ -1254,14 +1435,18 @@ $calculation: calc(20vh + 1px);
         font-family: 'Italiana', serif;
         position: absolute;
         bottom: 35px;
-
         &.dark{
             color: #E1DBD7;
         }
         &.color1{
-            color: #E1DBD7;
+            color: $fondoRosa1;
         }
-
+        &.color2{
+            color: $fondoRojo1;
+        }
+        &.color3{
+            color: $fondoAzul1;
+        }
         .cuerpito__titulazo--primero{
             margin-right: 3vw;
         }
@@ -1300,6 +1485,15 @@ $calculation: calc(20vh + 1px);
         &.dark{
             color: #E1DBD7;
         }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoRojo1;
+        }
+        &.color3{
+            color: $fondoAzul1;
+        }
     }
     .cuerpito__parrafoDos{
         text-transform: uppercase;
@@ -1312,6 +1506,15 @@ $calculation: calc(20vh + 1px);
 
         &.dark{
             color: #E1DBD7;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoRojo1;
+        }
+        &.color3{
+            color: $fondoAzul1;
         }
     }
     .cuerpito__trabajos{
@@ -1327,6 +1530,15 @@ $calculation: calc(20vh + 1px);
 
             &.dark{
                 color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoRojo1;
+            }
+            &.color3{
+                color: $fondoAzul1;
             }
         }
         .cuerpito__trabajos--titulo1:hover{
@@ -1346,6 +1558,15 @@ $calculation: calc(20vh + 1px);
 
             &.dark{
                 color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoRojo1;
+            }
+            &.color3{
+                color: $fondoAzul1;
             }
         }
 
@@ -1395,6 +1616,15 @@ $calculation: calc(20vh + 1px);
             &.dark{
                 color: $blanco2;
             }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoRojo1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
         .charlemos__segundo{
             margin-left: -100vw;
@@ -1404,6 +1634,15 @@ $calculation: calc(20vh + 1px);
 
             &.dark{
                 color: $blanco2;
+            }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoRojo1;
+            }
+            &.color3{
+                color: $fondoAzul1;
             }
         }
     }
@@ -1421,27 +1660,82 @@ $calculation: calc(20vh + 1px);
 
         margin-top: calc(21vh - 10px);
         margin-bottom: min($calculation, 60px);
+        &.dark{
+            color: $blanco2;
+        }
+        &.dark{
+            color: $blanco2;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoRojo1;
+        }
+        &.color3{
+            color: $fondoAzul1;
+        }
+        .contactame__mail{
+            font-size: 5vw;
+        }
+
         .contactame__lista{
             margin-top: 70px;
-            margin-left: 23.5vw;
-            text-align: justify;
+            text-align: center;
             list-style: none;
             font-size: 2.5vw;
+            .contactame__listaItemA{
+                text-decoration: none;
+                color: $negro;
+                &.dark{
+                    color: $blanco2;
+                }
+                &.color1{
+                    color: $fondoRosa1;
+                }
+                &.color2{
+                    color: $fondoRojo1;
+                }
+                &.color3{
+                    color: $fondoAzul1;
+                }
+            }
         }
     }
 
 
     // ----- ----- ----- ----- ----- FOOTER ----- ----- ----- ----- ----- 
     .piecito{
-        background-color: #2D625F;
-        vertical-align: text-bottom;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
+        align-items: center;
 
         .piecito__anio{
             display: none;
+            &.dark{
+                color: $blanco2;
+            }
         }
+        .piecito__legals{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .modito{
+        border-style: none;
+        color: $negro;
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: s;
+        text-align: center;
+        &.dark{
+            color: $blanco2;
+        }
+    }
+    .modito:hover{
+        border-style: none;
     }
 }
