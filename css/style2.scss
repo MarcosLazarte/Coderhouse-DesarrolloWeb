@@ -1,7 +1,6 @@
 $negro: #111111;
 $blanco: #FEFEFE;
 $blanco2: #E1DBD7;
-$blanco3: antiquewhite;
 $gris: #787878;
 $fondoBlanco1:antiquewhite;
 $fondoVerde1:#2D625F;
@@ -16,26 +15,16 @@ $calculation: calc(20vh + 1px);
 @function min($numbers...) {
     @return m#{a}x(#{$numbers})
 }
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
+
 *{
     padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
-.spinner{
-    animation: spin 10s linear infinite;
-}
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
-@media screen and (max-width: 480px){
+@media screen and (max-width:767px){
     body::-webkit-scrollbar{
         width: 10px;
         background: antiquewhite;
@@ -92,7 +81,6 @@ $calculation: calc(20vh + 1px);
         margin-top: 30px;
 
         .navegador__nombre{
-            display: none;
             font-family: 'Spartan', sans-serif;
             text-transform: uppercase;
             font-size: 14px;
@@ -111,7 +99,6 @@ $calculation: calc(20vh + 1px);
 
         }
         .navegador__estado{
-            display: none;
             font-family: 'Spartan', sans-serif;
             text-align: right;
             text-transform: uppercase;
@@ -123,553 +110,12 @@ $calculation: calc(20vh + 1px);
             &.dark{
                 color: $blanco2;
             }
-        }
-    }
-    .cabezal{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-
-        .a{
-            font-family: 'Spartan', sans-serif;
-            text-transform: uppercase;
-            font-size: 10px;
-            font-weight: 500;
-            margin-left: 4vw;
-            margin-top: 30px;
-        }
-        .b{
-            font-family: 'Spartan', sans-serif;
-            text-align: right;
-            text-transform: uppercase;
-            font-size: 10px;
-            font-weight: 500;
-            margin-right: 4vw;
-            margin-top: 30px;
         }
     }
     .prueba{
         position: absolute;
-        margin-top: 30px;
-        font-size: 11px;
-        cursor: pointer;
-        z-index: 2;
-
-        &.dark{
-            color: $blanco2;
-        }
-    }
-    .navegadorAbajo{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        position: fixed;
-        bottom: 40px;
-        z-index: 1;
-
-        .navegadorAbajo__time{
-            display: none;
-
-            font-family: 'Spartan', sans-serif;
-            text-align: left;
-            color: black;
-            font-size: 14px;
-            margin-left: 4vw;
-            &.dark{
-                color: $blanco2;
-            }
-        }
-        .posicionSwitch{
-            text-align: right;
-            position: absolute;
-            right: 4vw;
-            bottom: 0px;
-        }
-        .navegadorAbajo__switch{
-
-            background: #252525;
-            border: none;
-            border-radius: 2000px;
-            position: relative;
-            cursor: pointer;
-            display: flex;
-            background: steelblue;
-
-            &::after{
-                content: '\f185';
-                font-family: "Font Awesome 5 Free";
-                text-align: center;
-                font-size: 21px;
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                background: #F1F1F1;
-                border-radius: 100px;
-                box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
-                
-            }
-            &.active{
-                background: #E1DBD7;
-                color: $negro;
-                &::after{
-                    content: '\f186';
-                    font-family: "Font Awesome 5 Free";
-                    position: absolute;
-                }
-            }
-            span{
-                width: 30px;
-                height: 30px;
-                line-height: 30px;
-                display: block;
-                background: none;
-                color: #fff;
-            }
-        }
-    }
-    // ----- ----- ----- ----- ----- MAIN ----- ----- ----- ----- ----- 
-    .cuerpito{
-        height: auto;
-
-        .cuerpito__trabajos--acomodar{
-            margin-top: 100px;
-        }
-    }
-
-    .cuerpito__titulazo{
-        height: auto;
-        text-transform: uppercase;
-        font-size: 16vw;
-        line-height: 15.5vw;
-        margin-left: 2vw;
-        margin-right: 3vw;
-        padding-top: 65px;
-        font-family: 'Italiana', serif;
-        position: relative;
-
-        z-index: -1;
-
-        &.dark{
-            color: $blanco2;
-        }
-        &.color1{
-            color: $fondoRosa1;
-        }
-        &.color2{
-            color: $fondoNaranja1;
-        }
-        &.color3{
-            color: $fondoAzul1;
-        }
-
-        .cuerpito__titulazo--primero{
-            letter-spacing: 1vw;
-            font-weight: 700;
-            margin-left: 1vw;
-        }
-        .cuerpito__titulazo--segundo{
-            letter-spacing: 1vw;
-            font-weight: 700;
-            margin-left: 17vw;
-            margin-right: 3vw;
-        }
-        .cuerpito__titulazo--tercero{
-            letter-spacing: 1vw;
-            font-weight: 700;
-            margin-left: 1vw;
-            margin-right: 3vw;
-        }
-        .cuerpito__titulazo--cuarto{
-            letter-spacing: 1vw;
-            font-weight: 700;
-            margin-left: 1vw;
-            margin-right: 3vw;
-        }
-    }
-    .relleno{
-        height: 0vh;
-    }
-    .carota{
-        display: flex;
-        justify-content: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    .carota__imagen{
-        height: auto;
-        width: 70%;
-        border-radius: 8px;
-    }
-    .imagen{
-        background-color: $gris;
-        height: 92.8vw;
-        width: 70vw;
-        border-radius: 20px;
-        margin-top: 70px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url("https://drive.google.com/uc?/export=view&id=1ccwT7PW5BC-x3L8RSlPy2whTkBe6Wew9");
-
-        &.dark{
-            height: 112.85vw;
-            width: 70vw;
-            border-radius: 12px;
-            background-image: url("https://drive.google.com/uc?/export=view&id=1q86OsRkDKZLwKUCHoOewIAa3C0ysRS_z");
-        }
-    }
-    .cuerpito__parrafoUno{
-        text-transform: uppercase;
-        font-family: 'Spartan', serif;
-        text-align: justify;
-        font-size: 2.5vw;
-        line-height: 1.9em;
-        margin-left: 4vw;
-        margin-top: 70px;
-
-        &.dark{
-            color: $blanco2;
-        }
-        &.color1{
-            color: $fondoRosa1;
-        }
-        &.color2{
-            color: $fondoNaranja1;
-        }
-        &.color3{
-            color: $fondoAzul1;
-        }
-        .cuerpito__parrafoUno--oraUno{
-            margin-left: 5vw;
-        }
-    }
-    .cuerpito__parrafoDos{
-        text-transform: uppercase;
-        font-family: 'Spartan', serif;
-        text-align: justify;
-        font-size: 2.5vw;
-        line-height: 1.9em;
-        margin-top: 70px;
-        margin-left: 4vw;
-
-        &.dark{
-            color: $blanco2
-        }
-        &.color1{
-            color: $fondoRosa1;
-        }
-        &.color2{
-            color: $fondoNaranja1;
-        }
-        &.color3{
-            color: $fondoAzul1;
-        }
-    }
-    .cuerpito__trabajos{
-        text-decoration: none;
-        
-        .cuerpito__trabajos--titulo1{
-            font-family: 'Italiana', serif;
-            text-transform: uppercase;
-            font-size: 8.53vw;
-            margin-left: 4vw;
-            margin-right: 3vw;
-            color: black;
-
-            z-index: -3;
-
-            &.dark{
-                color: $blanco2;
-            }
-            &.color1{
-                color: $fondoRosa1;
-            }
-            &.color2{
-                color: $fondoNaranja1;
-            }
-            &.color3{
-                color: $fondoAzul1;
-            }
-        }
-        .cuerpito__trabajos--titulo1:hover{
-            background-image: url("https://drive.google.com/uc?/export=view&id=1CjyuWjgees40QiExBYtyYkr1LHfcNlgT");
-            background-position-Y: -600px;
-            background-position-x: center;
-
-            z-index: -3;
-        }
-        .cuerpito__trabajos--titulo2{
-            font-family: 'Italiana', serif;
-            text-transform: uppercase;
-            font-size: 8.53vw;
-            margin-top: 20px;
-            margin-left: 4vw;
-            margin-right: 3vw;
-            color: black;
-
-            &.dark{
-                color: $blanco2;
-            }
-            &.color1{
-                color: $fondoRosa1;
-            }
-            &.color2{
-                color: $fondoNaranja1;
-            }
-            &.color3{
-                color: $fondoAzul1;
-            }
-        }
-        .cuerpito__trabajos--titulo2:hover{
-                background-image: url("https://drive.google.com/uc?/export=view&id=12gFuJZAcWk8tK4H9cX5IFtBa5bRxvFB2");
-                background-position-Y: -800px;
-                background-position-x: center;
-                background-repeat: repeat;
-                overflow: hidden;
-                background-size: 70vw;
-
-        }
-    }
-    .cuerpito__trabajos--imagen1{
-        position: relative;
-        border-radius: 8px;
-        width: 92%;
-        margin-left: 4vw;
-        height: auto;
-
-        z-index: -1;
-    }
-    .cuerpito__trabajos--imagen2{
-        position: relative;
-        border-radius: 8px;
-        width: 92%;
-        margin-left: 4vw;
-        height: auto;
-
-        z-index: -1;
-    }
-    .charlemos{
-        font-family: 'Italiana', serif;
-        font-size: 15vw;
-        text-transform: uppercase;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        position: relative;
-        margin-top: 50px;
-        margin-bottom: 21vh;
-
-        .charlemos__primero{
-            display: none;
-            margin-left: -150vw;
-            height: 12vw;
-            position: relative;
-            white-space: nowrap;
-
-            &.dark{
-                color: $blanco2;
-            }
-            &.color1{
-                color: $fondoRosa1;
-            }
-            &.color2{
-                color: $fondoNaranja1;
-            }
-            &.color3{
-                color: $fondoAzul1;
-            }
-        }
-        .charlemos__segundo{
-            margin-left: -100vw;
-            position: relative;
-            white-space: nowrap;
-            
-            &.dark{
-                color: $blanco2;
-            }
-            &.color1{
-                color: $fondoRosa1;
-            }
-            &.color2{
-                color: $fondoNaranja1;
-            }
-            &.color3{
-                color: $fondoAzul1;
-            }
-        }
-    }
-    .espacio{
-        height: 0vh;
-        background-color: #0E4150
-    }
-    .contactame{
-        text-align: center;
-        font-family: 'Spartan', sans-serif;
-        line-height: 1.35em;
-        font-weight: 200;
-
-        margin-top: calc(21vh - 10px);
-        margin-bottom: min($calculation, 60px);
-
-        .contactame__mail{
-            font-size: 5vw;
-        }
-        .contactame__lista{
-            margin-top: 70px;
-            margin-left: 23.5vw;
-            text-align: justify;
-            list-style: none;
-            font-size: 4vw;
-
-            .contactame__lista1{
-                text-decoration: none;
-                color: $negro;
-            }
-            
-        }
-    }
-    // ----- ----- ----- ----- ----- FOOTER ----- ----- ----- ----- ----- 
-    .piecito{
-        vertical-align: text-bottom;
-        margin-bottom: 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-    }
-    .modito{
-        background-color: transparent;
-        border-style: none;
-        color: $negro;
-        z-index: 2;
-    }
-    .modito:hover{
-        background-color: transparent;
-        border-style: none;
-    }
-    .modito::after{
-        background-color: transparent;
-    }
-}
-// ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
-// ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
-// ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
-@media screen and (min-width: 480px) and (max-width: 767px){
-    body::-webkit-scrollbar{
-        width: 10px;
-        background: antiquewhite;
-    }
-    body::-webkit-scrollbar-thumb{
-        background: black;
-        border-radius: 4px;
-        border-right: 2px solid antiquewhite;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        background-color: antiquewhite;
-
-        &.dark{
-            background: $negro;
-        }
-    }
-    .animado{
-        opacity: 0.1;
-        transition: all 0.5s;
-    }
-    .mostrarArriba{
-        animation: mostrarArriba 1.5s;
-    }
-    @keyframes mostrarArriba{
-        0%{
-            transform: translateY(80px);
-        }
-        100%{
-            transform: translateY(0);
-        }
-    }
-    .mostrarDerecha{
-        animation: mostrarDerecha;
-    }
-    @keyframes mostrarDerecha{
-        0%{
-            transform: translateX(1000px);
-        }
-        100%{
-            transform: translateX(-1000px);
-        }
-    }
-    // ----- ----- ----- ----- ----- HEADER ----- ----- ----- ----- ----- 
-    .navegador{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        width: 100%;
-        height: auto;
-        position: fixed;
-        margin-top: 30px;
-
-        .navegador__nombre{
-            display: none;
-            font-family: 'Spartan', sans-serif;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 500;
-            margin-left: 4vw;
-
-            z-index: 2;
-            &.dark{
-                color: $blanco2;
-            }
-        }
-        .navegador__cambioColor{
-            text-align: center;
-            font-size: 20px;
-            cursor: pointer;
-
-        }
-        .navegador__estado{
-            display: none;
-            font-family: 'Spartan', sans-serif;
-            text-align: right;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 500;
-            margin-right: 4vw;
-
-            z-index: 2;
-            &.dark{
-                color: $blanco2;
-            }
-        }
-    }
-    .cabezal{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-
-        .a{
-            font-family: 'Spartan', sans-serif;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 500;
-            margin-left: 4vw;
-            margin-top: 30px;
-        }
-        .b{
-            font-family: 'Spartan', sans-serif;
-            text-align: right;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 500;
-            margin-right: 4vw;
-            margin-top: 30px;
-        }
-    }
-    .prueba{
-        position: absolute;
-        margin-top: 30px;
+        padding-top: 26px;
+        margin-left: 40vw;
         font-size: 15px;
         cursor: pointer;
         z-index: 2;
@@ -688,13 +134,12 @@ $calculation: calc(20vh + 1px);
         z-index: 1;
 
         .navegadorAbajo__time{
-            display: none;
-
             font-family: 'Spartan', sans-serif;
             text-align: left;
             color: black;
             font-size: 14px;
             margin-left: 4vw;
+
             &.dark{
                 color: $blanco2;
             }
@@ -708,23 +153,25 @@ $calculation: calc(20vh + 1px);
         .navegadorAbajo__switch{
 
             background: #252525;
+            border-radius: 1000px;
             border: none;
-            border-radius: 2000px;
             position: relative;
             cursor: pointer;
             display: flex;
-            background: steelblue;
-
+            outline: none;
             &::after{
-                content: '\f185';
+                content: '\f186';
                 font-family: "Font Awesome 5 Free";
-                text-align: center;
-                font-size: 21px;
+                display: block;
                 width: 30px;
                 height: 30px;
                 position: absolute;
                 background: #F1F1F1;
+                top: 0;
+                left: 0;
+                right: unset;
                 border-radius: 100px;
+                transition: .3s ease all;
                 box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
                 
             }
@@ -732,9 +179,8 @@ $calculation: calc(20vh + 1px);
                 background: #E1DBD7;
                 color: $negro;
                 &::after{
-                    content: '\f186';
-                    font-family: "Font Awesome 5 Free";
-                    position: absolute;
+                    right: 0;
+                    left: unset;
                 }
             }
             span{
@@ -763,7 +209,7 @@ $calculation: calc(20vh + 1px);
         line-height: 15.5vw;
         margin-left: 2vw;
         margin-right: 3vw;
-        padding-top: 65px;
+        padding-top: 100px;
         font-family: 'Italiana', serif;
         position: relative;
 
@@ -850,15 +296,6 @@ $calculation: calc(20vh + 1px);
         &.dark{
             color: $blanco2;
         }
-        &.color1{
-            color: $fondoRosa1;
-        }
-        &.color2{
-            color: $fondoNaranja1;
-        }
-        &.color3{
-            color: $fondoAzul1;
-        }
         .cuerpito__parrafoUno--oraUno{
             margin-left: 5vw;
         }
@@ -874,15 +311,6 @@ $calculation: calc(20vh + 1px);
 
         &.dark{
             color: $blanco2
-        }
-        &.color1{
-            color: $fondoRosa1;
-        }
-        &.color2{
-            color: $fondoNaranja1;
-        }
-        &.color3{
-            color: $fondoAzul1;
         }
     }
     .cuerpito__trabajos{
@@ -900,15 +328,6 @@ $calculation: calc(20vh + 1px);
 
             &.dark{
                 color: $blanco2;
-            }
-            &.color1{
-                color: $fondoRosa1;
-            }
-            &.color2{
-                color: $fondoNaranja1;
-            }
-            &.color3{
-                color: $fondoAzul1;
             }
         }
         .cuerpito__trabajos--titulo1:hover{
@@ -929,15 +348,6 @@ $calculation: calc(20vh + 1px);
 
             &.dark{
                 color: $blanco2;
-            }
-            &.color1{
-                color: $fondoRosa1;
-            }
-            &.color2{
-                color: $fondoNaranja1;
-            }
-            &.color3{
-                color: $fondoAzul1;
             }
         }
         .cuerpito__trabajos--titulo2:hover{
@@ -989,15 +399,6 @@ $calculation: calc(20vh + 1px);
             &.dark{
                 color: $blanco2;
             }
-            &.color1{
-                color: $fondoRosa1;
-            }
-            &.color2{
-                color: $fondoNaranja1;
-            }
-            &.color3{
-                color: $fondoAzul1;
-            }
         }
         .charlemos__segundo{
             margin-left: -100vw;
@@ -1006,15 +407,6 @@ $calculation: calc(20vh + 1px);
             
             &.dark{
                 color: $blanco2;
-            }
-            &.color1{
-                color: $fondoRosa1;
-            }
-            &.color2{
-                color: $fondoNaranja1;
-            }
-            &.color3{
-                color: $fondoAzul1;
             }
         }
     }
@@ -1025,49 +417,28 @@ $calculation: calc(20vh + 1px);
     .contactame{
         text-align: center;
         font-family: 'Spartan', sans-serif;
+        font-size: 3vw;
         line-height: 1.35em;
         font-weight: 200;
 
         margin-top: calc(21vh - 10px);
         margin-bottom: min($calculation, 60px);
-
-        .contactame__mail{
-            font-size: 5vw;
-        }
         .contactame__lista{
             margin-top: 70px;
             margin-left: 23.5vw;
             text-align: justify;
             list-style: none;
-            font-size: 4vw;
-
-            .contactame__lista1{
-                text-decoration: none;
-                color: $negro;
-            }
-            
+            font-size: 2.5vw;
         }
     }
     // ----- ----- ----- ----- ----- FOOTER ----- ----- ----- ----- ----- 
     .piecito{
+        background-color: #2D625F;
         vertical-align: text-bottom;
         margin-bottom: 40px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-    }
-    .modito{
-        background-color: transparent;
-        border-style: none;
-        color: $negro;
-        z-index: 2;
-    }
-    .modito:hover{
-        background-color: transparent;
-        border-style: none;
-    }
-    .modito::after{
-        background-color: transparent;
     }
 }
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- -----
@@ -1157,18 +528,6 @@ $calculation: calc(20vh + 1px);
         font-size: 15px;
         cursor: pointer;
         z-index: 2;
-    }
-    .cabezal{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-
-        .a{
-            display: none;
-        }
-        .b{
-            display: none;
-        }
     }
     .navegadorAbajo{
         display: grid;
@@ -1400,7 +759,6 @@ $calculation: calc(20vh + 1px);
             margin-left: -100vw;
             position: relative;
             white-space: nowrap;
-            color: $negro;
 
             &.dark{
                 color: $blanco2;
@@ -1439,9 +797,5 @@ $calculation: calc(20vh + 1px);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-
-        .piecito__anio{
-            display: none;
-        }
     }
 }
