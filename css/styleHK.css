@@ -133,8 +133,8 @@ html {
   .cabezita {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 0% 100% 0%;
-        grid-template-columns: 0% 100% 0%;
+    -ms-grid-columns: 0 100% 0;
+        grid-template-columns: 0 100% 0;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
@@ -149,8 +149,9 @@ html {
     position: absolute;
     margin-top: 30px;
     text-align: center;
-    font-size: 25px;
-    letter-spacing: 40px;
+    font-size: 28px;
+    right: 10vw;
+    letter-spacing: 13px;
     z-index: 3;
     color: white;
     text-decoration: none;

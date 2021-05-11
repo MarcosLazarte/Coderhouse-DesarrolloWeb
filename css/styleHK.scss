@@ -61,7 +61,7 @@ $colors:(red: red, blue: blue, black: black, cherry: $colorcherry); /* Usando MA
 /*HEADER    HEADER    HEADER    HEADER    HEADER    */
   .cabezita{
     display: grid;
-    grid-template-columns: 0% 100% 0%;
+    grid-template-columns: 0 100% 0;
     grid-template-rows: auto;
   }
   .navNueva{
@@ -70,8 +70,9 @@ $colors:(red: red, blue: blue, black: black, cherry: $colorcherry); /* Usando MA
     position: absolute;
     margin-top: 30px;
     text-align: center;
-    font-size: 25px;
-    letter-spacing: 40px;
+    font-size: 28px;
+    right: 10vw;
+    letter-spacing: 13px;
     z-index: 3;
     color: white;
     text-decoration: none;
