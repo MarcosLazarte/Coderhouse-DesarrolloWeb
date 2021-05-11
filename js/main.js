@@ -68,6 +68,8 @@ hStar.addEventListener('click', () =>{
         mCharla2.classList.toggle('color1');
         mContactame.classList.toggle('color1');
         mContactactame__lItemA.classList.toggle('color1');
+        fAnio.classList.toggle('color1');
+        fLegal.classList.toggle('color1');
 
         console.log("I tiene "+i+" y es rosa");
         i="B";
@@ -91,6 +93,8 @@ hStar.addEventListener('click', () =>{
         mCharla2.classList.toggle('color1');
         mContactame.classList.toggle('color1');
         mContactactame__lItemA.classList.toggle('color1');
+        fAnio.classList.toggle('color1');
+        fLegal.classList.toggle('color1');
 
         hCabezal__name.classList.toggle('color2');
         hCabezal__status.classList.toggle('color2');
@@ -108,6 +112,8 @@ hStar.addEventListener('click', () =>{
         mCharla2.classList.toggle('color2');
         mContactame.classList.toggle('color2');
         mContactactame__lItemA.classList.toggle('color2');
+        fAnio.classList.toggle('color2');
+        fLegal.classList.toggle('color2');
 
         console.log("I tiene "+i+" y es naranja");
         i="C";
@@ -131,6 +137,8 @@ hStar.addEventListener('click', () =>{
         mCharla2.classList.toggle('color2');
         mContactame.classList.toggle('color2');
         mContactactame__lItemA.classList.toggle('color2');
+        fAnio.classList.toggle('color2');
+        fLegal.classList.toggle('color2');
 
         hCabezal__name.classList.toggle('color3');
         hCabezal__status.classList.toggle('color3');
@@ -148,6 +156,8 @@ hStar.addEventListener('click', () =>{
         mCharla2.classList.toggle('color3');
         mContactame.classList.toggle('color3');
         mContactactame__lItemA.classList.toggle('color3');
+        fAnio.classList.toggle('color3');
+        fLegal.classList.toggle('color3');
 
         console.log("I tiene "+i+" y es azul");
         i="D";
@@ -171,6 +181,8 @@ hStar.addEventListener('click', () =>{
         mCharla2.classList.toggle('color3');
         mContactame.classList.toggle('color3');
         mContactactame__lItemA.classList.toggle('color3');
+        fAnio.classList.toggle('color3');
+        fLegal.classList.toggle('color3');
 
         i="A";
     }
