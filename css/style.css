@@ -56,7 +56,7 @@ ul {
     background: #111111;
   }
   .animado {
-    opacity: 0.1;
+    opacity: 0;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -220,6 +220,15 @@ ul {
   }
   .cabezal__estrella.dark {
     color: #E1DBD7;
+  }
+  .cabezal__estrella.color1 {
+    color: #F7CBC9;
+  }
+  .cabezal__estrella.color2 {
+    color: #F39136;
+  }
+  .cabezal__estrella.color3 {
+    color: #0E4150;
   }
   .navegadorAbajo {
     display: -ms-grid;
@@ -609,12 +618,23 @@ ul {
             align-items: center;
   }
   .piecito .piecito__anio {
+    font-family: 'Spartan', sans-serif;
     margin-left: 4vw;
   }
   .piecito .piecito__anio.dark {
     color: #E1DBD7;
   }
+  .piecito .piecito__anio.color1 {
+    color: #F7CBC9;
+  }
+  .piecito .piecito__anio.color2 {
+    color: #F39136;
+  }
+  .piecito .piecito__anio.color3 {
+    color: #0E4150;
+  }
   .piecito .piecito__legals {
+    font-family: 'Spartan', sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -622,25 +642,29 @@ ul {
         justify-content: space-around;
   }
   .modito {
+    background-color: transparent;
     border-style: none;
     color: #111111;
     z-index: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: s;
-            flex-direction: s;
-    text-align: center;
   }
   .modito.dark {
     color: #E1DBD7;
   }
+  .modito.color1 {
+    color: #F7CBC9;
+  }
+  .modito.color2 {
+    color: #F39136;
+  }
+  .modito.color3 {
+    color: #0E4150;
+  }
   .modito:hover {
+    background-color: transparent;
     border-style: none;
+  }
+  .modito::after {
+    background-color: transparent;
   }
 }
 
@@ -1214,12 +1238,23 @@ ul {
             align-items: center;
   }
   .piecito .piecito__anio {
+    font-family: 'Spartan', sans-serif;
     margin-left: 4vw;
   }
   .piecito .piecito__anio.dark {
     color: #E1DBD7;
   }
+  .piecito .piecito__anio.color1 {
+    color: #F7CBC9;
+  }
+  .piecito .piecito__anio.color2 {
+    color: #F39136;
+  }
+  .piecito .piecito__anio.color3 {
+    color: #0E4150;
+  }
   .piecito .piecito__legals {
+    font-family: 'Spartan', sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1234,6 +1269,15 @@ ul {
   }
   .modito.dark {
     color: #E1DBD7;
+  }
+  .modito.color1 {
+    color: #F7CBC9;
+  }
+  .modito.color2 {
+    color: #F39136;
+  }
+  .modito.color3 {
+    color: #0E4150;
   }
   .modito:hover {
     background-color: transparent;
@@ -1427,6 +1471,15 @@ ul {
   }
   .navegadorAbajo .navegadorAbajo__time.dark {
     color: #E1DBD7;
+  }
+  .navegadorAbajo .navegadorAbajo__time.color1 {
+    color: #F7CBC9;
+  }
+  .navegadorAbajo .navegadorAbajo__time.color2 {
+    color: #75000D;
+  }
+  .navegadorAbajo .navegadorAbajo__time.color3 {
+    color: #0E4150;
   }
   .navegadorAbajo .posicionSwitch {
     text-align: right;
@@ -1767,7 +1820,17 @@ ul {
   .piecito .piecito__anio.dark {
     color: #E1DBD7;
   }
+  .piecito .piecito__anio.color1 {
+    color: #F7CBC9;
+  }
+  .piecito .piecito__anio.color2 {
+    color: #F39136;
+  }
+  .piecito .piecito__anio.color3 {
+    color: #0E4150;
+  }
   .piecito .piecito__legals {
+    font-family: 'Spartan', sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1775,25 +1838,26 @@ ul {
         justify-content: space-around;
   }
   .modito {
+    background-color: transparent;
     border-style: none;
     color: #111111;
     z-index: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: s;
-            flex-direction: s;
-    text-align: center;
   }
   .modito.dark {
     color: #E1DBD7;
   }
+  .modito.color1 {
+    color: #F7CBC9;
+  }
+  .modito.color2 {
+    color: #F39136;
+  }
+  .modito.color3 {
+    color: #0E4150;
+  }
   .modito:hover {
     border-style: none;
+    background-color: transparent;
   }
 }
 /*# sourceMappingURL=style.css.map */

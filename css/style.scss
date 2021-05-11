@@ -60,7 +60,7 @@ ul{
         }
     }
     .animado{
-        opacity: 0.1;
+        opacity: 0;
         transition: all 0.5s;
     }
     .mostrarArriba{
@@ -196,6 +196,15 @@ ul{
 
         &.dark{
             color: $blanco2;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoNaranja1;
+        }
+        &.color3{
+            color: $fondoAzul1;
         }
     }
     .navegadorAbajo{
@@ -599,32 +608,51 @@ ul{
 
         align-items: center;
         .piecito__anio{
+            font-family: 'Spartan', sans-serif;
             margin-left: 4vw;
             &.dark{
                 color: $blanco2;
             }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoNaranja1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
         .piecito__legals{
+            font-family: 'Spartan', sans-serif;
             display: flex;
             justify-content: space-around;
         }
     }
     .modito{
+        background-color: transparent;
         border-style: none;
         color: $negro;
         z-index: 2;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: s;
-        text-align: center;
         &.dark{
             color: $blanco2;
         }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoNaranja1;
+        }
+        &.color3{
+            color: $fondoAzul1;
+        }
     }
     .modito:hover{
+        background-color: transparent;
         border-style: none;
     }
     .modito::after{
+        background-color: transparent;
     }
 }
 // ----- ----- ----- ----- ----- @MEDIA SCREEN ----- ----- ----- ----- ----- 
@@ -1185,12 +1213,23 @@ ul{
         align-items: center;
 
         .piecito__anio{
+            font-family: 'Spartan', sans-serif;
             margin-left: 4vw;
             &.dark{
                 color: $blanco2;
             }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoNaranja1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
         .piecito__legals{
+            font-family: 'Spartan', sans-serif;
             display: flex;
             justify-content: space-around;
         }
@@ -1202,6 +1241,15 @@ ul{
         z-index: 2;
         &.dark{
             color: $blanco2;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoNaranja1;
+        }
+        &.color3{
+            color: $fondoAzul1;
         }
     }
     .modito:hover{
@@ -1365,6 +1413,15 @@ ul{
             &.dark{
                 color: $blanco2;
             }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoRojo1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
         .posicionSwitch{
             text-align: right;
@@ -1402,7 +1459,6 @@ ul{
                 &::after{
                     content: '\f186';
                     font-family: "Font Awesome 5 Free";
-
                 }
             }
             span{
@@ -1717,25 +1773,43 @@ ul{
             &.dark{
                 color: $blanco2;
             }
+            &.color1{
+                color: $fondoRosa1;
+            }
+            &.color2{
+                color: $fondoNaranja1;
+            }
+            &.color3{
+                color: $fondoAzul1;
+            }
         }
         .piecito__legals{
+            font-family: 'Spartan', sans-serif;
             display: flex;
             justify-content: space-around;
         }
     }
     .modito{
+        background-color: transparent;
         border-style: none;
         color: $negro;
         z-index: 2;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: s;
-        text-align: center;
+
         &.dark{
             color: $blanco2;
+        }
+        &.color1{
+            color: $fondoRosa1;
+        }
+        &.color2{
+            color: $fondoNaranja1;
+        }
+        &.color3{
+            color: $fondoAzul1;
         }
     }
     .modito:hover{
         border-style: none;
+        background-color: transparent;
     }
 }
